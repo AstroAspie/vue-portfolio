@@ -59,7 +59,7 @@ export default {
         { name: 'Raspberry Pi', score: 80 },
         { name: 'GIMP', score: 75 },
       ]
-    };
+    }
   },
   methods: {},
 };

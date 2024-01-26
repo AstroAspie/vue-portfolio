@@ -7,7 +7,7 @@
           :key="link.name"
           :to="link.path"
           exact
-          active-class="active"
+          active-class="active-link"
         >
           {{ link.name }}
         </router-link>
@@ -49,5 +49,17 @@ nav {
   text-align: center;
   align-items: center;
   height: 4rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
 }
 </style>

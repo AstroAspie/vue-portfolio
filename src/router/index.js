@@ -18,15 +18,20 @@ const router = createRouter({
         component: () => import("../views/AboutView.vue"),
     },
     {
+      path: "/projects",
+      name: "projects",
+      component: () => import("../views/ProjectsView.vue"),
+    },
+    {
       path: "/contact",
       name: "contact",
       component: () => import("../views/ContactView.vue"),
     },
-    // {
-    //   path: "/:pathMatch(.*)*",
-    //   name: "not-found",
-    //   component: () => import("../views/NotFoundView.vue"),
-    // },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "not-found",
+      component: () => import("../views/NotFoundView.vue"),
+    },
   ],
 });
 
