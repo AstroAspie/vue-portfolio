@@ -20,9 +20,11 @@ export default {
   },
   methods: {
     nextMessage() {
+      const without_current = this.welcome_msg_array.filter((item) => item !== this.welcome_msg);
+
       this.welcome_msg =
-        this.welcome_msg_array[
-          Math.floor(Math.random() * this.welcome_msg_array.length)
+        without_current[
+          Math.floor(Math.random() * without_current.length)
         ];
     },
   },
