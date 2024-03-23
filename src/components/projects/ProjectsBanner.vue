@@ -78,7 +78,19 @@ export default {
           description: "This is a description of project 10",
           image: "https://via.placeholder.com/150",
           link: "https://www.google.com",
-        }
+        },
+        {
+          title: "Project 11",
+          description: "This is a description of project 11",
+          image: "https://via.placeholder.com/150",
+          link: "https://www.google.com",
+        },
+        {
+          title: "Project 12",
+          description: "This is a description of project 12",
+          image: "https://via.placeholder.com/150",
+          link: "https://www.google.com",
+        },
       ],
       selected_project: null,
     };

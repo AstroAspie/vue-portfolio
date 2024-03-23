@@ -39,7 +39,9 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 24rem;
+  height: 28rem;
+  width: 16rem;
+  margin-bottom: 12px;
 }
 
 .project-image {

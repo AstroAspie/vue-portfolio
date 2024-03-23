@@ -28,7 +28,7 @@ export default {
   display: flex;
   width: 99vw;
   height: 98vh;
-  margin: 0 auto;
+  margin: auto 0;
 }
 
 .top {

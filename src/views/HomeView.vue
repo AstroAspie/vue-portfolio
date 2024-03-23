@@ -1,7 +1,7 @@
 <template>
   <HomeLayout>
     <template #primary>
-      <div class="top-banner-img"></div>
+      <v-img class="image" :src="image" />
       <div class="top-banner-items">
         <AstroBanner />
         <div class="header-socials">
@@ -31,7 +31,9 @@ export default {
   components: { SkillsBanner, AstroBanner, ContactBanner, HomeLayout, ProjectsBanner, SocialsBar },
   name: "HomeView",
   data() {
-    return {};
+    return {
+      image: "./circuit-image.jpg"
+    };
   },
   methods: {},
 }
@@ -53,11 +55,11 @@ export default {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  opacity: 0.2;
 }
 
 .top-banner-img {
-  background-image: url("../assets/circuit-image.jpg");
-  width: 100vw;
+  width: 100%;
   height: 100%;
   opacity: 0.2;
   z-index: -1;
