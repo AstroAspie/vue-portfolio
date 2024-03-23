@@ -44,7 +44,7 @@ export default {
 }
 
 .skill-title {
-  font-size: 70%;
+  font-size: 60%;
   font-weight: bold;
 }
 

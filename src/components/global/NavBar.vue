@@ -6,8 +6,7 @@
           v-for="link in links"
           :key="link.name"
           :to="link.path"
-          exact
-          active-class="active-link"
+          :style="hoverLink(link)"
         >
           {{ link.name }}
         </router-link>
@@ -28,6 +27,13 @@ export default {
         { name: "Contact", path: "/contact" },
       ],
     };
+  },
+  methods: {
+    hoverLink(link) {
+      return this.$router.path === link.path
+        ? { color: "var(--color-accent)" }
+        : {};
+    },
   },
 };
 </script>
@@ -61,5 +67,11 @@ nav {
 
 .nav-links a:hover {
   color: var(--color-accent);
+  cursor: pointer;
+}
+
+.active-link {
+  color: var(--color-accent);
+  cursor: pointer;
 }
 </style>
