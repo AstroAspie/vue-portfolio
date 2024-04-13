@@ -1,7 +1,7 @@
 <template>
   <HomeLayout>
     <template #primary>
-      <v-img class="image" :src="image" />
+      <div class="image"></div>
       <div class="top-banner-items">
         <AstroBanner />
         <div class="header-socials">
@@ -26,16 +26,24 @@ import SocialsBar from "@/components/global/SocialsBar.vue";
 import AstroBanner from "@/components/AstroBanner.vue";
 import SkillsBanner from "@/components/skills/SkillsBanner.vue";
 
-
 export default {
   components: { SkillsBanner, AstroBanner, ContactBanner, HomeLayout, ProjectsBanner, SocialsBar },
   name: "HomeView",
   data() {
     return {
-      image: "./circuit-image.jpg"
+      image: "./circuit-image.jpg",
     };
   },
   methods: {},
+  
+  computed: {
+    ScreenDimensions() {
+      return {
+        width: window.innerWidth,
+        height: window.innerHeight,
+      };
+    },
+  }
 }
 </script>
 
@@ -53,7 +61,7 @@ export default {
 .image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-image: url("/circuit-image.jpg");
   z-index: -1;
   opacity: 0.2;
 }
