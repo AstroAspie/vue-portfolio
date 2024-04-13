@@ -21,16 +21,16 @@ export default {
       projects: [
         {
           title: "Crypto Currency Tracker",
-          description: "This is a description of project 1",
-          image: "https://via.placeholder.com/150",
+          description: "This is a crypto currency tracker using Nuxt.js and the CoinGecko API.",
+          image: "/images/crypto-tracker.png",
           link: "https://www.google.com",
           language: "JavaScript",
           type: "Web",
         },
         {
           title: "Space Invaders Clone",
-          description: "This is a description of project 2",
-          image: "https://via.placeholder.com/150",
+          description: "Space Invaders clone using HTML, CSS, and JavaScript.",
+          image: "/images/space-invaders.png",
           link: "https://www.google.com",
           language: "HTML/CSS/JS",
           type: "Game",
@@ -45,8 +45,8 @@ export default {
         // },
         {
           title: "2048 in Python",
-          description: "This is a description of project 4",
-          image: "https://via.placeholder.com/150",
+          description: "2048 mathematical tile game made using PyGame.",
+          image: "/images/2048.png",
           link: "https://www.google.com",
           language: "Python",
           type: "Game",
