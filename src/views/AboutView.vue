@@ -53,7 +53,7 @@ export default {
         this.loading = false;
       }, 2000);
       
-      const localString = '/My_Resume.pdf';
+      const localString = '/resume/My_Resume.pdf';
       fetch(localString)
         .then((response) => response.blob())
         .then((blob) => {
@@ -74,20 +74,26 @@ export default {
 
 <style>
 .about {
-  display: grid;
-  grid-template-columns: 1fr;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
   gap: 2rem;
-  padding: 2rem;
 }
 
 .contact {
-  display: grid;
   gap: 1rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .bio {
-  display: grid;
   gap: 1rem;
+  margin: 0 auto;
+  text-align: justify;
+  max-width: 75%;
 }
 
 

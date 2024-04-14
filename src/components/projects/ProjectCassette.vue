@@ -40,7 +40,7 @@ export default {
   flex-direction: column;
   justify-content: space-evenly;
   height: 28rem;
-  width: 16rem;
+  width: 24rem;
   margin-bottom: 12px;
 }
 
