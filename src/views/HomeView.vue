@@ -1,7 +1,6 @@
 <template>
   <HomeLayout>
     <template #primary>
-      <div class="image"></div>
       <div class="top-banner-items">
         <AstroBanner />
         <div class="header-socials">
