@@ -1,5 +1,5 @@
 <template>
-  <v-card class="project-cassette">
+  <v-card class="cassette-card project-cassette">
     <v-img :src="project.image" class="project-image"></v-img>
     <v-card-title class="project-title">{{ project.title }}</v-card-title>
     <v-card-text class="project-desc">{{ project.description }}</v-card-text>
@@ -35,6 +35,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.cassette-card:hover front-side {
+  transform: rotateY('180deg');
+}
+
+.cassette-card {
+  width: 24rem;
+  height: 28rem;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  perspective: 1000px;
+}
+
 .project-cassette {
   display: flex;
   flex-direction: column;
